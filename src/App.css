@@ -1,38 +1,233 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: auto;
+  padding: auto;
 }
+/* Navbar */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
+  height: 10vh;
+}
+
+.nav-flex {
+  display: flex;
   align-items: center;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: 0;
+  
+}
+.nav-item{
+  color: black;
+  margin-right: 5px;
+  padding-left: 10px;
+  font-size: 24px;
+  text-decoration: none;
+
+}
+
+.nav-logo {
+  margin-right: auto;
+  font-size: 32px;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+
+/* Home */
+
+.home-image{
+  border: 1px solid black;
+  position: relative;
+background-color: grey;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  width: 90%;
+  height: 80vh; /* Adjust the height as needed */
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.image-component{
+  text-align: center;
+  position: relative;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.contained-button{
+  cursor: pointer;
+  position: absolute;
+  background: white;
+  color: black;
+  height: 5vh;
+  top: 80%;
+  left: 20%;
+}
+
+.normal-button{
+  cursor: pointer;
+  position: absolute;
+  
+  color: white;
+  height: 5vh;
+  top: 80%;
+  left: 35%;
+
+}
+
+
+
+/* Carousel */
+
+
+.carousel{
+  
+  font-size: 34px;
+  animation: slide-in 10s linear infinite;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+
+}
+
+
+/* Services */
+
+.services{
+
+  text-align: center;
+  
+  font-size: 34px;
+  margin-top: 50px;
+  width: 90%;
+  margin-bottom: 20px;
+  justify-content: center;
+ 
+}
+.services-heading{
+  
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.cards{
+
+  display: flex;
+
+  margin-top: 40px;
+  width : 90%;
+  margin-bottom: 10px;
+ 
+ 
+}
+
+.card{
+  margin-right: 10px;
+  width: 33%;
+  border: 1px solid black;
+  box-shadow: 0 0 4px 1px;
+  height: 50vh;
+  transition: transform 0.3s ease-in-out;
+
+
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 9px 1px rgb(147, 7, 185);
+}
+
+.card-button{
+  background-color: white;
+  color: black;
+  border: none;
+  box-shadow: 0 0 9px 1px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+/* About */
+
+.about{
+  text-align: center;
+  font-size: 34px;
+  border: 1px solid blue;
+  margin-top : 50px;
+  height: 50vh;
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+/* Contact */
+
+.contact{
+  display: flex;
+  flex-direction: row;
+}
+
+.details{
+  width: 40%;
+  border: 1px solid rgb(54, 54, 2);
+  height: 40vh;
+  font-size: 44px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form{
+  width: 40%;
+  border: 1px solid rgb(54, 54, 2);
+  height: 40vh;
+  font-size: 44px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+/* Footer */
+
+.footer{
+  height: 20vh;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background-color: black;
+}
+
+.footer-logo{
+
+  position: relative;
+
+}
+
+/* About Us */
+
+.container{
+  text-align: center;
+  font-size: 34px;
+  width: 90%;
+  border: 1px solid black;
+  height: 70vh;
+  margin-bottom: 20px;
+}
+
+
+/* Keyframes */
+
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translateX(100%);
   }
 }
