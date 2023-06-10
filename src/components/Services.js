@@ -1,34 +1,90 @@
-import React from 'react'
+import React from "react";
 import icon from "../Assets/icon.jpg";
-
 
 export default function Services() {
   return (
     <div>
-       <div className="services">
-        <div className="services-heading">All the way to online success</div>
+      <div className="services">
+        <div className="services-heading">Our Digital Marketing Expertise</div>
 
         <div className="cards">
           <div className="card">
-            <img src={icon} />
+            <div className="services-outer">
+              <img src={icon} />
 
-            <h4>Social Media</h4>
-            <button className="card-button">Know More</button>
+              <div className="card-heading">SEARCH ENGINE OPTIMIZATION </div>
+            </div>
+
+            <div className="service-description">
+              Through careful keyword research and white hat practices, we can
+              help you achieve high rankings in the major search engines.
+            </div>
           </div>
           <div className="card">
-            <img src={icon} />
+            <div className="services-outer">
+              <img src={icon} />
 
-            <h4>SEO</h4>
-            <button className="card-button">Know More</button>
+              <div className="card-heading">SEARCH ENGINE OPTIMIZATION </div>
+            </div>
+
+            <div className="service-description">
+              Through careful keyword research and white hat practices, we can
+              help you achieve high rankings in the major search engines.
+            </div>
           </div>
           <div className="card">
-            <img src={icon} />
+            <div className="services-outer">
+              <img src={icon} />
 
-            <h4>Advertising</h4>
-            <button className="card-button">Know More</button>
+              <div className="card-heading">SEARCH ENGINE OPTIMIZATION </div>
+            </div>
+
+            <div className="service-description">
+              Through careful keyword research and white hat practices, we can
+              help you achieve high rankings in the major search engines.
+            </div>
+          </div>
+        </div>
+
+        <div className="cards">
+        <div className="card">
+            <div className="services-outer">
+              <img src={icon} />
+
+              <div className="card-heading">SEARCH ENGINE OPTIMIZATION </div>
+            </div>
+
+            <div className="service-description">
+              Through careful keyword research and white hat practices, we can
+              help you achieve high rankings in the major search engines.
+            </div>
+          </div>
+          <div className="card">
+            <div className="services-outer">
+              <img src={icon} />
+
+              <div className="card-heading">SEARCH ENGINE OPTIMIZATION </div>
+            </div>
+
+            <div className="service-description">
+              Through careful keyword research and white hat practices, we can
+              help you achieve high rankings in the major search engines.
+            </div>
+          </div>
+          <div className="card">
+            <div className="services-outer">
+              <img src={icon} />
+
+              <div className="card-heading">SEARCH ENGINE OPTIMIZATION </div>
+            </div>
+
+            <div className="service-description">
+              Through careful keyword research and white hat practices, we can
+              help you achieve high rankings in the major search engines.
+            </div>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }

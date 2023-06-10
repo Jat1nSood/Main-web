@@ -1,9 +1,38 @@
-import React from 'react'
+import React, {useState} from 'react'
 import meta2 from "../Assets/meta2.png";
 import tesla from "../Assets/tesla.png";
 import profile from "../Assets/profile.jpg";
 import background from "../Assets/background.svg";
 export default function Review() {
+
+    const items = [
+        {
+          name : 'Name of Client',
+          designation : "Rudra Founder",
+        description : 'Your product helped us to learn more about our clients.'        
+    }
+      ]
+
+    const[currentIndex, setCurrentIndex] = useState(0);
+
+    const updateindex = (newIndex) =>{
+
+      if(newIndex < 0){
+
+        setCurrentIndex(items.length-1)
+
+      }
+
+      else if(newIndex >=  items.length){
+
+        setCurrentIndex(0);
+      }
+
+      else{
+        setCurrentIndex(newIndex);
+      }
+
+    }
   return (
     <div>
             <div className="review">
@@ -18,9 +47,9 @@ export default function Review() {
 
             <div className="review-elemnts">
 
-                <h5>Name of Client</h5>
-                <p className="designation">Founder Rudra</p>
-                <p className="review-content">Your product helped us to learn more about our clients.</p>
+                <h5>{items[currentIndex].name}</h5>
+                <p className="designation">{items[currentIndex].designation}</p>
+                <p className="review-content">{items[currentIndex].description}</p>
 
             </div>
 
