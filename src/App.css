@@ -73,7 +73,7 @@ margin-left: 300px;
 
 .nav-logo img{
   width: 150px;
-  height: 90px;
+  height: 8rem;
 }
 
 /* Home */
@@ -93,8 +93,8 @@ margin-left: 300px;
 
 .home-heading{
   position: absolute;
-  top: 15%;
-  right: 60%;
+  top: 20%;
+  right: 54%;
   margin-left: 20px ;
   text-align: center;
   font-size: 54px;
@@ -193,6 +193,15 @@ margin-left: 300px;
   background: currentColor
  } 
 
+ .home-image{
+
+  position: absolute;
+  right: 20%;
+  top: 9%;
+  width: 20%;
+  height: 10%;
+
+ }
 
 
 /* Carousel */
@@ -250,6 +259,7 @@ margin-left: 300px;
   margin-top: 50px;
   width: 80%;
   text-align: center;
+  color: white;
 }
 
 .cards{
@@ -302,8 +312,8 @@ background: none;
 
 .review {
   position: relative;
-background-color: #e0701d;
-  margin-top: 40rem;
+background-color: white;
+  margin-top: 30rem;
 
   width: 100%;
   display: flex;
@@ -312,26 +322,32 @@ background-color: #e0701d;
   height: 800px;
 }
 
+.review-image{
+  position: absolute;
+  width: 25%;
+  right: 4%;
+}
 .review-heading{
-  z-index: 10;
   font-size: 44px;
   color: black;
   position: absolute;
-  top: 10%;
+  top: -10%;
+
+  margin-bottom: 20rem;
 }
 
 .review-card {
-background-color: white;
+background-color: #3f2f5a;
   position: absolute;
   display: flex;
   flex-direction: column;
   top: 45%;
-  left: 50%;
+  left: 30%;
   transform: translate(-50%, -50%);
   font-size: 18px;
   padding: 20px;
   box-shadow: 0 0 20px 0 rgba(134, 134, 134, 0.96);
-  width: 60%;
+  width: 40%;
   margin-top: 50px;
 
 }
@@ -343,6 +359,7 @@ background-color: white;
 }
 
 .profile img {
+  width: 16rem;
   border-radius: 200px;
   margin-top: -100px; /* Adjust the margin-top value to center the image */
 }
@@ -357,11 +374,12 @@ margin-top: 20px;
 
 }
 .designation{
+  font-size: 2rem;
   font-style: italic;
-  color:#3f2f5a;
+  color:#e0701d;
 }
 .review-content{
-  color: black;
+  color: white;
   font-weight: 500;
   text-align: center;
   font-size: 24px;
@@ -398,7 +416,6 @@ margin-top: 20px;
 }
 
 .details{
-
   position: absolute;
   width: 40%;
   height: 40vh;
@@ -408,6 +425,8 @@ margin-top: 20px;
   top: 20%;
   left : 5%;
 }
+
+
 
 .social{
   display: flex;
@@ -531,8 +550,8 @@ margin-top: 20px;
   height: 106px;
 }
 .details-heading{
-  font-size: 24px;
-  color: white;
+  font-size: 2.5rem;
+  color: black;
 }
 .form{
  

@@ -1,5 +1,5 @@
 import React from "react";
-import tesla from "../Assets/tesla.png";
+import home from "../Assets/home.png";
 
 import Dyota from "../Assets/Dyota.svg";
 
@@ -14,9 +14,7 @@ export default function Home() {
   return (
     <div>
 
-        <div className="empty-div">
-
-        </div>
+      
       <div className="home-container">
         <div className="image-components">
           <p className="home-heading">Welcome to Dyota - Your Partner in Digital Growth</p>
@@ -25,6 +23,11 @@ export default function Home() {
           </div>
           <div className="normal-button">
           <a>Pricing<i class="gg-arrow-right"></i></a>
+          </div>
+
+          <div className="home-image">
+            <img src={home}/>
+
           </div>
         </div>
       </div>

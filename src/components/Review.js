@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import tesla from "../Assets/tesla.png";
+import reviewImage from "../Assets/review-image.png";
 import profile from "../Assets/profile.jpg";
 import background from "../Assets/background.svg";
 export default function Review() {
@@ -54,6 +54,11 @@ export default function Review() {
 
 
 
+        </div>
+
+        <div className='review-image'>
+
+            <img src={reviewImage}/>
         </div>
 
         {/* <div className="company-logo-container">
