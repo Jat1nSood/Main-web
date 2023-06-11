@@ -1,5 +1,4 @@
 import React from "react";
-import meta2 from "../Assets/meta2.jpg"
 import tesla from "../Assets/tesla.png";
 
 import Dyota from "../Assets/Dyota.svg";
