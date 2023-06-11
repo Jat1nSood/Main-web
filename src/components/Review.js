@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import meta2 from "../Assets/meta2.png";
 import tesla from "../Assets/tesla.png";
 import profile from "../Assets/profile.jpg";
 import background from "../Assets/background.svg";
@@ -9,7 +8,7 @@ export default function Review() {
         {
           name : 'Name of Client',
           designation : "Rudra Founder",
-        description : 'Your product helped us to learn more about our clients.'        
+        description : `orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum`       
     }
       ]
 
@@ -36,7 +35,7 @@ export default function Review() {
   return (
     <div>
             <div className="review">
-        <img src={background} />
+
 
         <p className='review-heading'>Hear from our Clients</p>
         <div className="review-card">

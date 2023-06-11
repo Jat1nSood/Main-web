@@ -1,5 +1,5 @@
 import React from 'react'
-import meta2 from "../Assets/meta2.png"
+import meta2 from "../Assets/meta2.jpg"
 
 
 export default function Carousel() {
@@ -14,8 +14,7 @@ export default function Carousel() {
           <img src={meta2} />
           <img src={meta2} />
           <img src={meta2} />
-          <img src={meta2} />
-          <img src={meta2} />
+          
         </div>
       </div>
     </div>

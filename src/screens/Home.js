@@ -1,5 +1,5 @@
 import React from "react";
-import meta2 from "../Assets/meta2.png";
+import meta2 from "../Assets/meta2.jpg"
 import tesla from "../Assets/tesla.png";
 
 import Dyota from "../Assets/Dyota.svg";
@@ -44,7 +44,7 @@ export default function Home() {
 
     <div className="contact">
 
-      <img src={contactBackground}/>
+
     
         <div className="details">
             <img className="contact-logo" src={Dyota}/>
