@@ -1,6 +1,6 @@
 import React from "react";
 import home from "../Assets/home.png";
-
+import Typed from 'react-typed';
 import Dyota from "../Assets/Dyota.svg";
 
 
@@ -11,20 +11,37 @@ import contactBackground from '../Assets/contactBackground.svg'
 
 
 export default function Home() {
+
+  const TypedText = () => {
+    return (
+      <Typed
+        strings={[
+          'Unleash the Power of Digital Advertising with Dyota!',
+          'Take You Brand to The Next Level!',
+           ]}
+        typeSpeed={40}
+        backSpeed={50}
+        loop
+      />
+    );
+          }
   return (
     <div>
 
       
       <div className="home-container">
         <div className="image-components">
-          <p className="home-heading">Welcome to Dyota - Your Partner in Digital Growth</p>
-          <div className="contained-button">
-            <a>Get Started</a>
-          </div>
-          <div className="normal-button">
-          <a>Pricing<i class="gg-arrow-right"></i></a>
-          </div>
 
+          <p className="home-heading-typed"><TypedText/></p>
+          <p className="home-heading">
+          Grow your business with our<i>cutting-edge</i>
+          <br />
+          Digital Marketing Solutions.
+        </p>
+          <div className="contained-button">
+            <a>Start Your Digital Journey Today</a>
+          </div>
+        
           <div className="home-image">
             <img src={home}/>
 
