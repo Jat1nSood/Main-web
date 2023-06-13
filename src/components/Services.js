@@ -1,170 +1,72 @@
-// import React, { useEffect, useState } from "react";
-// import icon from "../Assets/icon.jpg";
-
-// export default function Services() {
-//   const [shouldFlip, setShouldFlip] = useState(false);
-
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       const section = document.querySelector(".services");
-//       const rect = section.getBoundingClientRect();
-//       const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
-
-//       setShouldFlip(isVisible);
-//     };
-
-//     window.addEventListener("scroll", handleScroll);
-
-//     return () => {
-//       window.removeEventListener("scroll", handleScroll);
-//     };
-//   }, []);
-
-//   return (
-//     <div>
-//       <div className="services">
-//         <div className="services-heading">Our Digital Marketing Expertise</div>
-
-//         <div className="cards">
-//           <div className={`card`}>
-//             <div className="card-heading">SEARCH ENGINE OPTIMIZATION</div>
-//             <div className="service-description">
-//               Through careful keyword research and white hat practices, we can
-//               help you achieve high rankings in the major search engines.
-//             </div>
-            
-//             <div><button>Read More</button></div>
-//           </div>
-
-//           <div className={`card`}>
-//             <div className="card-heading">SEARCH ENGINE OPTIMIZATION</div>
-//             <div className="service-description">
-//               Through careful keyword research and white hat practices, we can
-//               help you achieve high rankings in the major search engines.
-//             </div>
-//             <div><button>Read More</button></div>
-
-//           </div>
-
-
-
-//           <div className={`card `}>
-//             <div className="card-heading">SEARCH ENGINE OPTIMIZATION</div>
-//             <div className="service-description">
-//               Through careful keyword research and white hat practices, we can
-//               help you achieve high rankings in the major search engines.
-//             </div>
-//             <div><button>Read More</button></div>
-
-//           </div>
-
-          
-//         </div>
-
-//         <div className="cards">
-//           <div className={`card `}>
-//             <div className="card-heading">SEARCH ENGINE OPTIMIZATION</div>
-//             <div className="service-description">
-//               Through careful keyword research and white hat practices, we can
-//               help you achieve high rankings in the major search engines.
-//             </div>
-//             <div><button>Read More</button></div>
-
-//           </div>
-
-//           <div className={`card `}>
-//             <div className="card-heading">SEARCH ENGINE OPTIMIZATION</div>
-//             <div className="service-description">
-//               Through careful keyword research and white hat practices, we can
-//               help you achieve high rankings in the major search engines.
-//             </div>
-//             <div><button>Read More</button></div>
-
-//           </div>
-
-
-
-//           <div className={`card `}>
-//             <div className="card-heading">SEARCH ENGINE OPTIMIZATION</div>
-//             <div className="service-description">
-//               Through careful keyword research and white hat practices, we can
-//               help you achieve high rankings in the major search engines.
-//             </div>
-//             <div><button>Read More</button></div>
-
-//           </div>
-
-          
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-
 import React, { useEffect, useState } from "react";
 import icon from "../Assets/icon.jpg";
 
 export default function Services() {
-  const [shouldFlip, setShouldFlip] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const items = [
+    {
+      heading: 'Optimization',
+      description:  `<li>LinkedIn Profile Optimization</li>
+      <li>Content Creation</li>
+      <li>Content Calendar and analysis</li>`
+    },
+    {
+      heading: 'Lead Generation',
+      description: `<li>LinkedIn Ad Campaign Management</li>
+      <li>LinkedIn Ad Optimization</li>
+      <li>Budgeting & landing page optimization</li>`,
+    },
+    {
+      heading: 'Demand Generation',
+      description: `<li>LinkedIn & Web Strategy aligned with Marketing Goals</li>
+      <li>Analytics & conversion optimization (LinkedIn & Web)</li>
+      <li>LinkedIn Content creation & Content calendar</li>`
+    },
+    {
+      heading: 'Personal Branding',
+      description: `<li>LinkedIn Profile Optimization</li>
+      <li> Personal Brand Messaging & Brand Story</li>
+      <li>LinkedIn Content Calendar & Idea Generation</li>`
+    },
+  ];
+
+  const setIndex = (index) => {
+    if (index === items.length - 1) {
+      setCurrentIndex(0);
+    } else {
+      setCurrentIndex(index + 1);
+    }
+  };
 
   useEffect(() => {
-    const handleScroll = () => {
-      const section = document.querySelector(".services");
-      const rect = section.getBoundingClientRect();
-      const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
-
-      if (isVisible) {
-        setShouldFlip(true);
-        window.removeEventListener("scroll", handleScroll);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
+    const interval = setInterval(() => {
+      setIndex(currentIndex);
+    }, 3000); // Change the interval duration (in milliseconds) as desired
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      clearInterval(interval);
     };
-  }, []);
+  }, [currentIndex]);
 
   return (
-    <div>
-      <div className="services">
-        <div className="services-heading">Our Digital Marketing Expertise</div>
+    <div className="services">
+      <div className="services-heading">Our Digital Marketing Expertise</div>
 
-        <div className="cards">
-          <div className={`card ${shouldFlip ? "slide-in" : ""}`}>
-            <div className="card-heading">SEARCH ENGINE OPTIMIZATION</div>
-            <div className="service-description">
-              Through careful keyword research and white hat practices, we can
-              help you achieve high rankings in the major search engines.
-            </div>
-            <div>
-              <button>Read More</button>
-            </div>
+      <div className="service-components">
+        <div className="services-description">
+          We specialize in <span>LinkedIn</span> campaigns, focusing on enhancing brand
+          awareness and cultivating leads, specifically for Business to Business
+          companies
+        </div>
+
+        <div className="service-card">
+          <div className="service-card-heading">
+            {items[currentIndex].heading}
           </div>
 
-          <div className={`card ${shouldFlip ? "slide-in" : ""}`}>
-            <div className="card-heading">SEARCH ENGINE OPTIMIZATION</div>
-            <div className="service-description">
-              Through careful keyword research and white hat practices, we can
-              help you achieve high rankings in the major search engines.
-            </div>
-            <div>
-              <button>Read More</button>
-            </div>
-          </div>
+          <div className="service-card-description" dangerouslySetInnerHTML={{ __html: items[currentIndex].description }}></div>
 
-          <div className={`card ${shouldFlip ? "slide-in" : ""}`}>
-            <div className="card-heading">SEARCH ENGINE OPTIMIZATION</div>
-            <div className="service-description">
-              Through careful keyword research and white hat practices, we can
-              help you achieve high rankings in the major search engines.
-            </div>
-            <div>
-              <button>Read More</button>
-            </div>
-          </div>
         </div>
       </div>
     </div>
