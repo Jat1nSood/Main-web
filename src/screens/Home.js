@@ -15,7 +15,7 @@ export default function Home() {
       <Typed
         strings={[
           'Unleash the Power of Digital Advertising with Dyota!',
-          'Take You Brand to The Next Level!',
+          'Take Your Brand to The Next Level!',
    
            ]}
         typeSpeed={40}
@@ -64,7 +64,7 @@ export default function Home() {
         <Credible/>
       </div>
 
-      <div>
+      <div id="services-section">
         <Services />
       </div>
 
@@ -82,9 +82,9 @@ export default function Home() {
             results with Dyota.
           </p>
           <div className="social">
-            <i class="fa fa-twitter"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-linkedin"></i>
+            <a href="https://twitter.com/DyotaDigital"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/dyotalive/"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/dyotads/?trk=public_profile_topcard-current-company" ><i class="fa fa-linkedin"></i></a>
           </div>
         </div>
 

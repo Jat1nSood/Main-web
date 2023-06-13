@@ -41,6 +41,12 @@ body{
   margin-left: 95rem;
   
 }
+.nav-items a{
+  text-decoration: none;
+  color: black;
+}
+
+
 .nav-item{
   color: black;
   margin-right: 4rem;
@@ -62,7 +68,10 @@ body{
 .nav-items-2{
   margin-left : -6rem;
 }
-
+.nav-items-2 a{
+  text-decoration: none;
+  color: #e0701d;
+}
  .nav-logo {
   width: 1rem;
 margin-left: 8rem;
@@ -467,7 +476,7 @@ background-color: white;
 
   left: 22%;
 
-  margin-bottom: 10rem;
+  margin-bottom: 3rem;
 }
 
 
@@ -486,7 +495,6 @@ background-color: #3f2f5a;
   padding: 20px;
   box-shadow: 0 0 20px 0 rgba(134, 134, 134, 0.96);
   width: 40%;
-  margin-top: 50px;
 
 
 }
@@ -513,6 +521,9 @@ background-color: #3f2f5a;
 margin-top: 20px;
   margin: 10px !important;
 
+}
+.clientName{
+  font-size: 3rem;
 }
 .designation{
   font-size: 2rem;
@@ -574,6 +585,10 @@ margin-top: 20px;
   width: 50%;
   flex-direction: row;
   margin-top : 50px;
+}
+
+.social a{
+  color: black;
 }
 
  .gg-twitter {
@@ -835,10 +850,18 @@ input[type="submit"] {
 
 .container{
 
-  width: 90%;
-  border: 1px solid black;
-  height: 70vh;
+  width: 60%;
+  border: 4px solid #3f2f5a;
+  height: 60vh;
+  font-size: 3rem;
+  text-align: center;
+  padding: 4rem;
+  margin-bottom: 2rem;
   
+}
+
+.container span{
+  color: #e0701d;
 }
 
 

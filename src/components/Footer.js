@@ -1,5 +1,7 @@
 import React from "react";
 import Dyota from '../Assets/DyotaFooter.svg';
+import { Link } from "react-router-dom";
+import About from "../screens/About";
 
 export default function Footer() {
   return (
@@ -8,27 +10,27 @@ export default function Footer() {
         <div className="inner-container">
           <div className="footer-logo">
             <img className="contact-logo" src={Dyota} />
-            <button className="footer-cta"><a className = 'cta-text'href="https://calendly.com/jatin-sood">Schedule an appointment</a></button>
+            <button className="footer-cta"><a className = 'cta-text'href="https://calendly.com/jatin-sood">Book a meeting</a></button>
           </div>
           <div className="footer-links">
             <p className="link-heading">Quick Links</p>
-            <a>About Us</a>
-            <a>Services</a>
+            <Link to='/about'>About Us</Link>
+            <a href="#services-section">Services</a>
             <a>Careers</a>
           </div>
           <div className="footer-socials">
             <p className="link-heading">Socials</p>
-            <a>
+            <a href="https://twitter.com/DyotaDigital">
               <i className="fa fa-twitter dimensions t">
                 <span> </span>Twitter
               </i>
             </a>
-            <a>
+            <a  href="https://www.instagram.com/dyotalive/">
               <i className="fa fa-instagram dimensions ">
                 <span> </span>Instagram
               </i>
             </a>
-            <a>
+            <a href="https://www.linkedin.com/company/dyotads/?trk=public_profile_topcard-current-company">
               <i className="fa fa-linkedin dimensions ">
                 <span> </span>LinkedIn
               </i>
@@ -63,3 +65,5 @@ export default function Footer() {
     </div>
   );
 }
+
+

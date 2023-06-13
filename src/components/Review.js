@@ -40,13 +40,13 @@ export default function Review() {
         <p className='review-heading'>Hear from our Clients</p>
         <div className="review-card">
             <div className="profile">
-                <img src={profile}/>
+               
 
             </div>
 
             <div className="review-elemnts">
 
-                <h5>{items[currentIndex].name}</h5>
+                <h5 className='clientName'>{items[currentIndex].name}</h5>
                 <p className="designation">{items[currentIndex].designation}</p>
                 <p className="review-content">{items[currentIndex].description}</p>
 
