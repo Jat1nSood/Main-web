@@ -61,7 +61,7 @@ export default function Review() {
 
         <div className='review-image'>
 
-          <img src={reviewImage} />
+          <img className='im' src={reviewImage} />
         </div>
         {/* <div className="company-logo-container">
             <div className="company-logo"><img src={meta2} /></div>

@@ -54,7 +54,7 @@ export default function Home() {
       </div>
 
        <div>
-        <Carousel />
+        {/* <Carousel /> */}
       </div>
       <div>
         <WhyUs />
