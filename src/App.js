@@ -1,4 +1,4 @@
-import './App.css';
+// import './App.css';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import Home from './screens/Home';
@@ -14,11 +14,11 @@ function App() {
     <>
     <Router>
       <Navbar/>
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>
-      <Footer />
+      <Footer /> */}
     </Router>
     
     </>
