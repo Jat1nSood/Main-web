@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function credible() {
   return (
-    <div>
+    <div >
       <div className='credible'>
 
         <div className='credible-cards'>

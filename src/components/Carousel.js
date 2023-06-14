@@ -22,7 +22,7 @@ export default function Carousel() {
           <img src={meta} />
           <img src={meta} />
           <img src={meta} />
-          <img src={meta} />
+    
           
         </div>
       </div>

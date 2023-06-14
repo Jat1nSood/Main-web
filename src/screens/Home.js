@@ -8,6 +8,7 @@ import Services from "../components/Services";
 import Review from "../components/Review";
 import contactBackground from "../Assets/contactBackground.svg";
 import WhyUs from "../components/WhyUs";
+import'../CSS/home.css'
 
 export default function Home() {
   const TypedText = () => {
@@ -47,22 +48,22 @@ export default function Home() {
           </div>
 
           <div className="home-image">
-            <img src={home} />
+            <img className="h1" src={home} />
           </div>
         </div>
       </div>
 
-      <div>
+       <div>
         <Carousel />
       </div>
-
       <div>
         <WhyUs />
       </div>
 
       <div>
         <Credible/>
-      </div>
+      </div> 
+
 
       <div id="services-section">
         <Services />
