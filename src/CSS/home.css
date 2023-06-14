@@ -1167,13 +1167,20 @@ height: 5rem;
 
 /* Footer */
 .footer {
-    width:100%;
-    background-color: #3f2f5a;
-    padding: 20px;
-    font-size: 3rem;
-    color: black;
-    margin-top: 2rem;
-  }
+  width: 99%;
+  background-color: #3f2f5a;
+  padding: 20px;
+  font-size: 3rem;
+  color: black;
+  margin-top: 2rem;
+}
+
+@media (max-width: 430px) {
+  .footer {
+  width: 94.8%;
+}}
+
+
   
   .inner-container {
     display: flex;
